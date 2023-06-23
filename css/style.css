@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: billabong;
+    src: url(Billabong.ttf);
+}
+
+body {
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to left, #f80759, #bc4e9c);
+    background: linear-gradient(to left, #f80759, #bc4e9c);
+}
+
+.form {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.form h1 {
+    padding: 50px 0 35px 0;
+    font-family: billabong;
+    font-size: 4rem;
+    color: white;
+    font-weight: normal;
+}
+
+.form input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.15rem;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.form button {
+    width: 100%;
+    background: none;
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.form p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hrDivide {
+    display: grid;
+    grid-template-columns: 1fr .25fr 1fr;
+    margin: 1.5rem 0;
+    color: white;
+    align-items: center;
+}
+
+.hrDivide p {
+    color: white;
+    text-align: center;
+}
+
+.hrDivide hr {
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.signUp {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 1.2rem;
+}
+
+.signUp a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+@media (min-width:650px) {
+    body {
+        background: rgb(147, 131, 131);
+    }
+
+    .wrap {
+        width: 500px;
+        height: 610px;
+        background: #d0275f;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-box-shadow: 0px 0px 50px 18px rgba(208, 39, 95, 0.81);
+        box-shadow: 0px 0px 50px 18px rgba(208, 39, 95, 0.81);
+        border-radius: 15px;
+    }
+
+    .signUp {
+        position: relative;
+        margin-top: 4rem;
+    }
+
+}
